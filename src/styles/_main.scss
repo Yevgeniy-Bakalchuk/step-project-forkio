@@ -13,25 +13,25 @@ body{
   width: 100%;
   position: relative;
 }
-.header-menu-height-for-media{
+.header_menu_height_for_media{
   min-height: 100px;
 }
-.header-menu{
+.header_menu{
   padding-top: 22px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.header-logo-link{
+.header_logo_link{
   display: flex;
   text-decoration: none;
 }
-.header-logo-img{
+.header_logo_img{
   width: 43px;
   height: 41px;
   padding-top: 10px;
 }
-.header-logo-text{
+.header_logo_text{
   padding-left: 17px;
   font-weight: bold;
   font-size: 24px;
@@ -39,13 +39,13 @@ body{
   text-transform: uppercase;
   color: #8D81AC;
 }
-.header-nav{
+.header_nav{
 
 }
-.header-nav-item{
+.header_nav_item{
 
 }
-.header-nav-link{
+.header_nav_link{
   text-decoration: none;
   margin-right: 47px;
   font-weight: bold;
@@ -53,30 +53,30 @@ body{
   line-height: 17px;
   color: #8D81AC;
 }
-.header-nav-link:last-child{
+.header_nav_link:last-child{
   background-color: #8D81AC;
   padding: 11px 40px;
   border-radius: 40px;
   color: #fff;
 }
-.header-text-center{
+.header_text_center{
   padding-top: 100px;
 }
-.header-text-title{
+.header_text_title{
   font-weight: bold;
   font-size: 82px;
   line-height: 82px;
   text-align: center;
   color: #FFFFFF;
 }
-.header-text-subtitle{
+.header_text_subtitle{
   padding-top: 19px;
   font-size: 30px;
   line-height: 30px;
   text-align: center;
   color: #8D81AC;
 }
-.header-text-version{
+.header_text_version{
   padding-top: 19px;
   padding-bottom: 459px;
   font-size: 16px;
@@ -85,11 +85,11 @@ body{
   text-transform: uppercase;
   color: #848E97;
 }
-.link-download-position{
+.link_download_position{
   display: flex;
   justify-content: center;
 }
-.link-download-for-free{
+.link_download_for_free{
   text-decoration: none;
   font-weight: bold;
   font-size: 21px;
