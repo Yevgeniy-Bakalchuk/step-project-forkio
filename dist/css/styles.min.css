@@ -1,0 +1,95 @@
+body, html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif, 'Lato', sans-serif; }
+
+.header {
+  background-image: url("../images/header_img.png");
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  position: relative; }
+
+.header-menu-height-for-media {
+  min-height: 100px; }
+
+.header-menu {
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.header-logo-link {
+  display: flex;
+  text-decoration: none; }
+
+.header-logo-img {
+  width: 43px;
+  height: 41px;
+  padding-top: 10px; }
+
+.header-logo-text {
+  padding-left: 17px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #8D81AC; }
+
+.header-nav-link {
+  text-decoration: none;
+  margin-right: 47px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  color: #8D81AC; }
+
+.header-nav-link:last-child {
+  background-color: #8D81AC;
+  padding: 11px 40px;
+  border-radius: 40px;
+  color: #fff; }
+
+.header-text-center {
+  padding-top: 100px; }
+
+.header-text-title {
+  font-weight: bold;
+  font-size: 82px;
+  line-height: 82px;
+  text-align: center;
+  color: #FFFFFF; }
+
+.header-text-subtitle {
+  padding-top: 19px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #8D81AC; }
+
+.header-text-version {
+  padding-top: 19px;
+  padding-bottom: 459px;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #848E97; }
+
+.link-download-position {
+  display: flex;
+  justify-content: center; }
+
+.link-download-for-free {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #8D81AC;
+  border-radius: 40px;
+  padding: 23px 71px;
+  position: absolute;
+  bottom: -27px; }
