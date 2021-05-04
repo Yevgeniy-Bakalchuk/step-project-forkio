@@ -5,11 +5,10 @@ const serv = (cb) => {
     server: {
       baseDir: "./",
     },
-    //  browser: "chrome",
-    open: true,
+    // browser: "chrome",
   });
   cb();
 };
 
 exports.serv = serv;
-exports.browsersync = browserSync;
+exports.browserSync = browserSync;
