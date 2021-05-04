@@ -15,7 +15,3 @@ const dev = (cb) => {
 };
 
 exports.default = parallel(dev, build);
-
-// exports.default = cleanDist;
-
-// exports.default = parallel(serv, series(style, scripts, images));
