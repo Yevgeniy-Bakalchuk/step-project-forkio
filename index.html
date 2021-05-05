@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Step-2</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="./dist/css/styles.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
   </head>
   <body>
     <!--  GENYA PART 1-->
@@ -15,16 +14,26 @@
       <div class="header_menu_height_for_media">
         <div class="header_menu">
           <a class="header_logo_link" href="#">
-            <img class="header_logo_img" src="./src/images/header_logo.png" />
+            <img class="header_logo_img" src="./src/images/header_logo.png" alt="logo"/>
             <p class="header_logo_text">ForkIO</p>
           </a>
           <nav class="header_nav">
-            <ul class="header_nav_item">
-              <a class="header_nav_link" href="#">Overview</a>
-              <a class="header_nav_link" href="#">About Fork</a>
-              <a class="header_nav_link" href="#">Buying Options</a>
-              <a class="header_nav_link" href="#">Support</a>
-              <a class="header_nav_link" href="#">Buy Now</a>
+            <ul class="header_nav_menu">
+              <li class="header_nav_item">
+                <a class="header_nav_link" href="#">Overview</a>
+              </li>
+              <li>
+                <a class="header_nav_link" href="#">About Fork</a>
+              </li>
+              <li>
+                <a class="header_nav_link" href="#">Buying Options</a>
+              </li>
+              <li>
+                <a class="header_nav_link" href="#">Support</a>
+              </li>
+              <li>
+                <a class="header_nav_link header_nav_link_buy" href="#">Buy Now</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -39,7 +48,7 @@
       </div>
     </header>
     <!--  GENYA PART 1-->
-
+  <main>
     <!-- Revolutionary editor -->
     <section class="about">
       <h2 class="about__title"></h2>
@@ -54,26 +63,46 @@
 
 
 <!--    Genya part 2-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <section class="container_background_talking_about">
+      <h2 class="talking_about_title">People Are Talking About Fork</h2>
+        <section class="container_block_talking_about">
+          <div class="main_block_talking_about">
+            <div class="talking_about_blocks">
+              <img src="./src/images/talking_block_1.png" alt="#" class="talking_about_images">
+              <p class="talking_about_text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
+            </div>
+            <div class="talking_about_blocks">
+              <img src="./src/images/talking_block_2.png" alt="#" class="talking_about_images">
+              <p class="talking_about_text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
+            </div>
+            <div class="talking_about_blocks">
+              <img src="./src/images/talking_block_3.png" alt="#" class="talking_about_images">
+              <p class="talking_about_text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
+            </div>
+            <div class="talking_about_blocks">
+              <img src="./src/images/talking_block_4.png" alt="#" class="talking_about_images">
+              <p class="talking_about_text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
+            </div>
+            <div class="talking_about_blocks">
+              <img src="./src/images/talking_block_5.png" alt="#" class="talking_about_images">
+              <p class="talking_about_text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus.</p>
+            </div>
+            <div class="talking_about_blocks">
+              <img src="./src/images/talking_block_6.png" alt="#" class="talking_about_images">
+              <p class="talking_about_text">Fusce pharetra erat id odio blandit, nec  pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
+            </div>
+          </div>
+        </section>
+        <p class="talking_about_text_bottom">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+      <img class="talking_about_bottom_line" src="./src/images/grey_line.png" alt="grey line">
+    </section>
 <!--    Genya part 2-->
-    <script src="./dist/js/index.js"></script>
+
+
+
+
+
+  </main>
+    <script src="./dist/js/scripts.min.js"></script>
   </body>
 </html>
