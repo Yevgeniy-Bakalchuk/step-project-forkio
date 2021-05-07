@@ -1,56 +1,89 @@
-body,html{
+body,
+html {
   margin: 0;
   padding: 0;
 }
-body{
-  font-family: 'Montserrat', sans-serif, 'Lato', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif, "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 10px;
+
+  // @media (min-width: 993px) and (max-width: 1200px) {
+  //   width: 100%;
+  //   padding: 0 10px;
+  // }
+  @media (max-width: 1200px) {
+    max-width: 970px;
+  }
+  @media (max-width: 992px) {
+    max-width: 740px;
+  }
+  // @media (max-width: 480px) {
+  //   max-width: 300px;
+  //   min-width: 300px;
+  // }
+  @media (max-width: 767px) {
+    max-width: none;
+    min-width: 320px;
+  }
 }
 //Genya PART 1
-.header{
-  background-image: url("./src/images/header_img.png");
-  width: 100%;
+.header {
+  background-image: url("../../dist/images/header_img.png");
+  // width: 100%;
 }
-.header-menu-height-for-media{
-  min-height: 100px;
+.header-menu-height-for-media {
+  // min-height: 100px;
 }
-.header-menu{
+.header-menu {
   padding-top: 22px;
   display: flex;
   justify-content: space-around;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
-.header-logo-link{
+.header-logo-link {
   display: flex;
   text-decoration: none;
 }
-.header-logo-img{
+.header-logo-img {
   width: 43px;
   height: 41px;
   padding-top: 10px;
 }
-.header-logo-text{
+.header-logo-text {
   padding-left: 17px;
   font-weight: bold;
   font-size: 24px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #8D81AC;
+  color: #8d81ac;
 }
-.header-nav{
+// .header-nav{
 
-}
-.header-nav-item{
+// }
+// .header-nav-item{
 
-}
-.header-nav-link{
+// }
+.header-nav-link {
   text-decoration: none;
   margin-right: 47px;
   font-weight: bold;
   font-size: 16px;
   line-height: 17px;
-  color: #8D81AC;
+  color: #8d81ac;
 }
-.header-nav-link:last-child{
-  background-color: #8D81AC;
+.header-nav-link:last-child {
+  background-color: #8d81ac;
   padding: 11px 40px;
   border-radius: 40px;
   color: #fff;
