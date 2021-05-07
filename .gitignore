@@ -6,3 +6,5 @@ logs/
 *.log
 # dependencies
 /node_modules
+/dist/
+package-lock.json
