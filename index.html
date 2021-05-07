@@ -10,181 +10,297 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Step-2</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="stylesheet" href="./dist/css/styles.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    >>>>>>> main
   </head>
   <body>
     <!--  GENYA PART 1-->
     <header class="header">
-      <div class="container">
-        <div class="header-menu-height-for-media">
-          <div class="header-menu">
-            <a class="header-logo-link" href="#">
-              <img class="header-logo-img" src="./src/images/header_logo.png" />
-              <p class="header-logo-text">ForkIO</p>
-            </a>
-            <nav class="header-nav">
-              <ul class="header-nav-item">
-                <a class="header-nav-link" href="#">Overview</a>
-                <a class="header-nav-link" href="#">About Fork</a>
-                <a class="header-nav-link" href="#">Buying Options</a>
-                <a class="header-nav-link" href="#">Support</a>
-                <a class="header-nav-link" href="#">Buy Now</a>
-              </ul>
-            </nav>
-          </div>
+      <div class="header_menu_height_for_media">
+        <div class="header_menu">
+          <a class="header_logo_link" href="#">
+            <img
+              class="header_logo_img"
+              src="./src/images/header_logo.png"
+              alt="logo"
+            />
+            <p class="header_logo_text">ForkIO</p>
+          </a>
+          <nav class="header_nav">
+            <ul class="header_nav_menu">
+              <li class="header_nav_item">
+                <a class="header_nav_link" href="#">Overview</a>
+              </li>
+              <li>
+                <a class="header_nav_link" href="#">About Fork</a>
+              </li>
+              <li>
+                <a class="header_nav_link" href="#">Buying Options</a>
+              </li>
+              <li>
+                <a class="header_nav_link" href="#">Support</a>
+              </li>
+              <li>
+                <a class="header_nav_link header_nav_link_buy" href="#"
+                  >Buy Now</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
+        <section class="header_text_center">
+          <h2 class="header_text_title">Fork App</h2>
+          <p class="header_text_subtitle">
+            A real gamechanger in the world of web development
+          </p>
+          <p class="header_text_version">v. 2.8 For Mac and Windows</p>
+        </section>
+        <section class="link_download_position">
+          <a class="link_download_for_free" href="#">Download For Free Now</a>
+        </section>
       </div>
     </header>
-
     <!--  GENYA PART 1-->
-
-    <!-- Revolutionary editor -->
-    <section class="about">
-      <div class="container">
-        <p class="download-btn__info">Unlimited 30-Days Trial Period</p>
-        <h2 class="about__title">Revolutionary editor</h2>
-        <p class="about__text">
-          Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
-          laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget
-          ut augue.
+    <main>
+      <!-- Revolutionary editor -->
+      <section class="about">
+        <div class="container">
+          <p class="download-btn__info">Unlimited 30-Days Trial Period</p>
+          <h2 class="about__title">Revolutionary editor</h2>
+          <p class="about__text">
+            Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
+            laoreet vulputate dignissim. Sed id metus id quam auctor molestie
+            eget ut augue.
+          </p>
+          <ul class="about__info">
+            <li class="info__item">
+              <button class="info__button">
+                <i class="fas fa-eye"></i> Watch</button
+              ><a href="#!" class="info__link">1,397</a>
+            </li>
+            <li class="info__item">
+              <button class="info__button">
+                <i class="fas fa-star"></i>Star</button
+              ><a href="#!" class="info__link">21,038</a>
+            </li>
+            <li class="info__item">
+              <button class="info__button">
+                <i class="fas fa-code-branch">Fork</i></button
+              ><a href="#!" class="info__link">4,391</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Revolutionary editor -->
+      <!-- Here is what you get -->
+      <section class="features">
+        <div class="container">
+          <h3 class="section__title">&lt;Here is what you get &gt;</h3>
+          <ul class="features__list">
+            <li class="features__item">
+              <img
+                src="./dist/images/features-icon1.png"
+                alt=""
+                class="features__icon"
+              />
+              <div class="features__description">
+                <h5 class="description__title">
+                  Creatred to Make The Web Better
+                </h5>
+                <p class="description__text">
+                  Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra
+                  dui laoreet vulputate dignissim. Sed id metus id quam auctor
+                  molestie eget ut augue.
+                </p>
+              </div>
+            </li>
+            <li class="features__item">
+              <img
+                src="./dist/images/features-icon2.png"
+                alt=""
+                class="features__icon"
+              />
+              <div class="features__description">
+                <h5 class="description__title">Incredibly Powerful Tool</h5>
+                <p class="description__text">
+                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
+                  iaculis mi gravida luctus. Aliquam erat volutpat.
+                </p>
+              </div>
+            </li>
+            <li class="features__item">
+              <img
+                src="./dist/images/features-icon3.png"
+                alt=""
+                class="features__icon"
+              />
+              <div class="features__description">
+                <h5 class="description__title">Experimental Stuff</h5>
+                <p class="description__text">
+                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
+                  iaculis mi gravida luctus. Aliquam erat volutpat.
+                </p>
+              </div>
+            </li>
+            <li class="features__item">
+              <img
+                src="./dist/images/features-icon4.png"
+                alt=""
+                class="features__icon"
+              />
+              <div class="features__description">
+                <h5 class="description__title">
+                  Creatred to Make The Web Better
+                </h5>
+                <p class="description__text">
+                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
+                  iaculis mi gravida luctus. Aliquam erat volutpat.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- <img src="./dist/images/features.png" alt="" class="features__image" /> -->
+        </div>
+      </section>
+      <!-- Here is what you get -->
+      <!--    Genya part 2-->
+      <section class="container_background_talking_about">
+        <h2 class="talking_about_title">People Are Talking About Fork</h2>
+        <section class="container_block_talking_about">
+          <div class="main_block_talking_about">
+            <div class="talking_about_blocks">
+              <img
+                src="./src/images/talking_block_1.png"
+                alt="#"
+                class="talking_about_images"
+              />
+              <p class="talking_about_text">
+                Sed vestibulum scelerisque urna, eu finibus leo facilisis sit
+                amet. Proin id dignissim magna. Sed varius urna et pulvinar
+                venenatis.
+              </p>
+            </div>
+            <div class="talking_about_blocks">
+              <img
+                src="./src/images/talking_block_2.png"
+                alt="#"
+                class="talking_about_images"
+              />
+              <p class="talking_about_text">
+                Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum,
+                rhoncus molestie neque ac, mollis eleifend nibh.
+              </p>
+            </div>
+            <div class="talking_about_blocks">
+              <img
+                src="./src/images/talking_block_3.png"
+                alt="#"
+                class="talking_about_images"
+              />
+              <p class="talking_about_text">
+                In efficitur in velit et tempus. Duis nec odio dapibus, suscipit
+                erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac
+                vehicula.
+              </p>
+            </div>
+            <div class="talking_about_blocks">
+              <img
+                src="./src/images/talking_block_4.png"
+                alt="#"
+                class="talking_about_images"
+              />
+              <p class="talking_about_text">
+                Sed vestibulum scelerisque urna, eu finibus leo facilisis sit
+                amet. Proin id dignissim magna. Sed varius urna et pulvinar
+                venenatis.
+              </p>
+            </div>
+            <div class="talking_about_blocks">
+              <img
+                src="./src/images/talking_block_5.png"
+                alt="#"
+                class="talking_about_images"
+              />
+              <p class="talking_about_text">
+                Praesent ut eros tristique, malesuada lectus vel, lobortis
+                massa. Nulla faucibus lorem id arcu consequat faucibus.
+              </p>
+            </div>
+            <div class="talking_about_blocks">
+              <img
+                src="./src/images/talking_block_6.png"
+                alt="#"
+                class="talking_about_images"
+              />
+              <p class="talking_about_text">
+                Fusce pharetra erat id odio blandit, nec pharetra eros
+                venenatis. Pellentesque porttitor cursus massa et vestibulum.
+              </p>
+            </div>
+          </div>
+        </section>
+        <p class="talking_about_text_bottom">
+          Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris,
+          facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu
+          libero tincidunt consequat nec elementum orci. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
         </p>
-        <ul class="about__info">
-          <li class="info__item">
-            <button class="info__button">
-              <i class="fas fa-eye"></i> Watch</button
-            ><a href="#!" class="info__link">1,397</a>
-          </li>
-          <li class="info__item">
-            <button class="info__button"><i class="fas fa-star"></i>Star</button
-            ><a href="#!" class="info__link">21,038</a>
-          </li>
-          <li class="info__item">
-            <button class="info__button">
-              <i class="fas fa-code-branch">Fork</i></button
-            ><a href="#!" class="info__link">4,391</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- Revolutionary editor -->
-    <!-- Here is what you get -->
-    <section class="features">
-      <div class="container">
-        <h3 class="section__title">&lt;Here is what you get &gt;</h3>
-        <ul class="features__list">
-          <li class="features__item">
-            <img
-              src="./dist/images/features-icon1.png"
-              alt=""
-              class="features__icon"
-            />
-            <div class="features__description">
-              <h5 class="description__title">
-                Creatred to Make The Web Better
-              </h5>
-              <p class="description__text">
-                Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
-                laoreet vulputate dignissim. Sed id metus id quam auctor
-                molestie eget ut augue.
-              </p>
-            </div>
-          </li>
-          <li class="features__item">
-            <img
-              src="./dist/images/features-icon2.png"
-              alt=""
-              class="features__icon"
-            />
-            <div class="features__description">
-              <h5 class="description__title">Incredibly Powerful Tool</h5>
-              <p class="description__text">
-                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
-                odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
-                mi gravida luctus. Aliquam erat volutpat.
-              </p>
-            </div>
-          </li>
-          <li class="features__item">
-            <img
-              src="./dist/images/features-icon3.png"
-              alt=""
-              class="features__icon"
-            />
-            <div class="features__description">
-              <h5 class="description__title">Experimental Stuff</h5>
-              <p class="description__text">
-                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
-                odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
-                mi gravida luctus. Aliquam erat volutpat.
-              </p>
-            </div>
-          </li>
-          <li class="features__item">
-            <img
-              src="./dist/images/features-icon4.png"
-              alt=""
-              class="features__icon"
-            />
-            <div class="features__description">
-              <h5 class="description__title">
-                Creatred to Make The Web Better
-              </h5>
-              <p class="description__text">
-                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
-                odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
-                mi gravida luctus. Aliquam erat volutpat.
-              </p>
-            </div>
-          </li>
-        </ul>
-        <!-- <img src="./dist/images/features.png" alt="" class="features__image" /> -->
-      </div>
-    </section>
-    <!-- Here is what you get -->
-    <!-- Fork Subscription Pricing -->
-    <section class="subscription">
-      <div class="container">
-        <h2 class="section__title">Fork Subscription Pricing</h2>
-        <ul class="subscription__list">
-          <li class="subscription__item">
-            <span class="subscription__title">Students</span>
-            <span class="subscription__price">$29</span>
-            <span class="subscription__period">per month</span>
-            <span class="subscription__service">Personal License</span>
-            <button class="subscription__button"></button>
-          </li>
-          <li class="subscription__item">
-            <span class="subscription__title">professional</span>
-            <span class="subscription__price">$59</span>
-            <span class="subscription__period">per month</span>
-            <span class="subscription__service">Professional License</span>
-            <span class="subscription__service">Email Support</span>
-            <button class="subscription__button"></button>
-          </li>
-          <li class="subscription__item">
-            <span class="subscription__title">agency</span>
-            <span class="subscription__price">$99</span>
-            <span class="subscription__period">per month</span>
-            <span class="subscription__service">1-12 Team Members</span>
-            <span class="subscription__service">Phone Support</span>
-            <button class="subscription__button"></button>
-          </li>
-          <li class="subscription__item">
-            <span class="subscription__title">enterprise</span>
-            <span class="subscription__price">$159</span>
-            <span class="subscription__period">peservice</span>
-            <span class="subscription__service">Unlimited Team Members</span>
-            <span class="subscription__service">24/7 Phone Support</span>
-            <button class="subscription__button"></button>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- Fork Subscription Pricing -->
+        <img
+          class="talking_about_bottom_line"
+          src="./src/images/grey_line.png"
+          alt="grey line"
+        />
+      </section>
+      <!--    Genya part 2-->
+      <!-- Fork Subscription Pricing -->
+      <section class="subscription">
+        <div class="container">
+          <h2 class="section__title">Fork Subscription Pricing</h2>
+          <ul class="subscription__list">
+            <li class="subscription__item">
+              <span class="subscription__title">Students</span>
+              <span class="subscription__price">$29</span>
+              <span class="subscription__period">per month</span>
+              <span class="subscription__service">Personal License</span>
+              <button class="subscription__button"></button>
+            </li>
+            <li class="subscription__item">
+              <span class="subscription__title">professional</span>
+              <span class="subscription__price">$59</span>
+              <span class="subscription__period">per month</span>
+              <span class="subscription__service">Professional License</span>
+              <span class="subscription__service">Email Support</span>
+              <button class="subscription__button"></button>
+            </li>
+            <li class="subscription__item">
+              <span class="subscription__title">agency</span>
+              <span class="subscription__price">$99</span>
+              <span class="subscription__period">per month</span>
+              <span class="subscription__service">1-12 Team Members</span>
+              <span class="subscription__service">Phone Support</span>
+              <button class="subscription__button"></button>
+            </li>
+            <li class="subscription__item">
+              <span class="subscription__title">enterprise</span>
+              <span class="subscription__price">$159</span>
+              <span class="subscription__period">peservice</span>
+              <span class="subscription__service">Unlimited Team Members</span>
+              <span class="subscription__service">24/7 Phone Support</span>
+              <button class="subscription__button"></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Fork Subscription Pricing -->
+    </main>
     <script src="./dist/js/scripts.min.js"></script>
   </body>
 </html>
