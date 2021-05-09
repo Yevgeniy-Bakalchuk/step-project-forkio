@@ -306,7 +306,7 @@ li {
   display: grid;
   -moz-column-gap: 49px;
   column-gap: 49px;
-  grid-template-areas: "description   title title" "description   . . " "description   . . " "description   . . "; }
+  grid-template-areas: "description   title title" "description   . . " "description   . . " "description   . . "; }
 
 .section__title-features {
   color: #8d81ac;
@@ -352,6 +352,7 @@ li {
   width: 100%; }
 
 .talking_about_title {
+  margin-top: 0;
   padding-top: 108px;
   font-weight: bold;
   font-size: 48px;
@@ -403,14 +404,16 @@ li {
   .talking_about_blocks:nth-child(2) {
     margin-left: 0; } }
 
-@media screen and (min-width: 481px) and (max-width: 992px) {
-  .talking_about_blocks:nth-child(3) {
-    margin-left: 0;
-    margin-top: 50px; } }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .talking_about_blocks:nth-child(3) {
-    margin-left: 0; } }
+.talking_about_blocks:nth-child(3) {
+  margin-top: 65px; }
+  @media screen and (min-width: 481px) and (max-width: 992px) {
+    .talking_about_blocks:nth-child(3) {
+      margin-left: 0;
+      margin-top: 40px; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .talking_about_blocks:nth-child(3) {
+      margin-left: 0;
+      margin-top: 30px; } }
 
 @media screen and (min-width: 993px) {
   .talking_about_blocks:nth-child(4) {
@@ -433,6 +436,7 @@ li {
     margin-left: 0; } }
 
 .talking_about_text {
+  margin-top: 0;
   padding-top: 33px;
   text-align: center;
   font-style: italic;
@@ -440,6 +444,20 @@ li {
   font-size: 16px;
   line-height: 24px;
   color: #ffffff; }
+  @media screen and (min-width: 481px) and (max-width: 992px) {
+    .talking_about_text {
+      padding-top: 29px;
+      margin-top: 0; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .talking_about_text {
+      padding-top: 27px;
+      margin-top: 0; } }
+
+.talking_about_text:nth-child(1) {
+  padding-top: 20px; }
+
+.talking_about_text:nth-child(3) {
+  padding-top: 18px; }
 
 .talking_about_text_bottom {
   font-size: 14px;
