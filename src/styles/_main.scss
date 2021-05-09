@@ -6,16 +6,16 @@ html {
 body {
   font-family: "Montserrat", sans-serif, "Lato", sans-serif;
 }
-
 a {
   text-decoration: none;
 }
-
+li{
+  list-style: none;
+}
 .container {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 10px;
-
   // @media (min-width: 993px) and (max-width: 1200px) {
   //   width: 100%;
   //   padding: 0 10px;
@@ -36,173 +36,3 @@ a {
   }
 }
 
-//Genya PART 1
-.header {
-  background-image: url("../../dist/images/header_img.png");
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-  position: relative;
-}
-.header_menu_height_for_media {
-  min-height: 100px;
-}
-.header_menu {
-  padding-top: 22px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.header_logo_link {
-  display: flex;
-  text-decoration: none;
-}
-.header_logo_img {
-  width: 43px;
-  height: 41px;
-  padding-top: 10px;
-}
-.header_logo_text {
-  padding-left: 17px;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #8d81ac;
-}
-
-// .header_nav{
-// }
-
-.header_nav_menu {
-  display: flex;
-}
-// .header_nav_item{
-// }
-
-.header_nav_link {
-  text-decoration: none;
-  margin-right: 47px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 17px;
-  color: #8d81ac;
-}
-
-.header_nav_link_buy {
-  background-color: #8d81ac;
-  padding: 11px 30px;
-  border-radius: 40px;
-  color: #fff;
-  margin-right: 5px;
-}
-.header_text_center {
-  padding-top: 100px;
-}
-.header_text_title {
-  font-weight: bold;
-  font-size: 82px;
-  line-height: 82px;
-  text-align: center;
-  color: #ffffff;
-}
-.header_text_subtitle {
-  padding-top: 19px;
-  font-size: 30px;
-  line-height: 30px;
-  text-align: center;
-  color: #8d81ac;
-}
-.header_text_version {
-  padding-top: 19px;
-  padding-bottom: 459px;
-  font-size: 16px;
-  line-height: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #848e97;
-}
-.link_download_position {
-  display: flex;
-  justify-content: center;
-}
-.link_download_for_free {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 22px;
-  color: #ffffff;
-  background: #8d81ac;
-  border-radius: 40px;
-  padding: 23px 71px;
-  position: absolute;
-  bottom: -27px;
-}
-//Genya part 1
-
-//Genya part 2
-.container_background_talking_about {
-  background-image: url("../images/people_talking_img.png");
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-}
-.talking_about_title {
-  padding-top: 108px;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 50px;
-  text-align: center;
-  color: #ffffff;
-}
-.container_block_talking_about {
-  max-width: 90%;
-  margin: 0 auto;
-}
-.main_block_talking_about {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.talking_about_blocks {
-  display: flex;
-  flex-flow: column;
-  max-width: 25%;
-  margin-top: 80px;
-  align-items: center;
-  margin-left: 70px;
-}
-.talking_about_blocks:nth-child(1) {
-  margin-left: 0;
-}
-.talking_about_blocks:nth-child(4) {
-  margin-left: 0;
-}
-.talking_about_text {
-  padding-top: 33px;
-  text-align: center;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
-}
-.talking_about_text_bottom {
-  font-size: 14px;
-  line-height: 21px;
-  color: #a291a5;
-  max-width: 55%;
-  position: relative;
-  padding-top: 110px;
-  padding-bottom: 18px;
-  margin: 0 auto;
-}
-.talking_about_bottom_line {
-  padding-bottom: 29px;
-  width: 50%;
-  height: 2px;
-  color: #645766;
-  display: block;
-  margin: 0 auto;
-}
-//Genya part 2
