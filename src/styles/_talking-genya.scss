@@ -1,0 +1,68 @@
+//Genya part 2
+.container_background_talking_about {
+  background-image: url("../../dist/images/people_talking_img.png");
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+.talking_about_title {
+  padding-top: 108px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 108.11px;
+  margin: 0;
+}
+.container_block_talking_about {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.main_block_talking_about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.talking_about_blocks {
+  display: flex;
+  flex-flow: column;
+  max-width: 25%;
+  margin-top: 80px;
+  align-items: center;
+  margin-left: 70px;
+}
+.talking_about_blocks:nth-child(1) {
+  margin-left: 0;
+}
+.talking_about_blocks:nth-child(4) {
+  margin-left: 0;
+}
+.talking_about_text {
+  padding-top: 33px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.talking_about_text_bottom {
+  font-size: 14px;
+  line-height: 21px;
+  color: #a291a5;
+  max-width: 55%;
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 18px;
+  margin: 0 auto;
+}
+.talking_about_bottom_line {
+  padding-bottom: 29px;
+  width: 50%;
+  height: 2px;
+  color: #645766;
+  display: block;
+  margin: 0 auto;
+}
+//Genya part 2

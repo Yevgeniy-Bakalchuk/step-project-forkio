@@ -17,15 +17,15 @@
       rel="stylesheet"
     />
   </head>
+  <!--  GENYA PART 1-->
   <body>
-    <!--  GENYA PART 1-->
     <header class="header">
       <div class="header_menu_height_for_media">
         <div class="header_menu">
           <a class="header_logo_link" href="#">
             <img
               class="header_logo_img"
-              src="./src/images/header_logo.png"
+              src="./dist/images/header_logo.png"
               alt="logo"
             />
             <p class="header_logo_text">ForkIO</p>
@@ -53,7 +53,7 @@
           </nav>
         </div>
         <section class="header_text_center">
-          <h2 class="header_text_title">Fork App</h2>
+          <h1 class="header_text_title">Fork App</h1>
           <p class="header_text_subtitle">
             A real gamechanger in the world of web development
           </p>
@@ -68,8 +68,8 @@
     <main>
       <!-- MARIIA Revolutionary editor -->
       <section class="about">
-        <div class="container">
-          <p class="download-btn__info">Unlimited 30-Days Trial Period</p>
+        <div class="container container__about">
+          <p class="download-link__info">Unlimited 30-Days Trial Period</p>
           <h2 class="about__title">Revolutionary editor</h2>
           <p class="about__text">
             Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
@@ -78,108 +78,131 @@
           </p>
           <ul class="about__info">
             <li class="info__item">
-              <button class="info__button">
-                <i class="fas fa-eye"></i> Watch</button
-              ><a href="#!" class="info__link">1,397</a>
+              <div class="info__item-wrapper">
+                <span class="info__button">
+                  <i class="fas fa-eye"></i>Watch</span
+                ><a href="#!" class="info__link">1,397</a>
+              </div>
             </li>
             <li class="info__item">
-              <button class="info__button">
-                <i class="fas fa-star"></i>Star</button
-              ><a href="#!" class="info__link">21,038</a>
+              <div class="info__item-wrapper">
+                <span class="info__button">
+                  <i class="fas fa-star"></i>Star</span
+                ><a href="#!" class="info__link">21,038</a>
+              </div>
             </li>
             <li class="info__item">
-              <button class="info__button">
-                <i class="fas fa-code-branch">Fork</i></button
-              ><a href="#!" class="info__link">4,391</a>
+              <div class="info__item-wrapper">
+                <span class="info__button">
+                  <i class="fas fa-code-branch"></i>Fork</span
+                ><a href="#!" class="info__link">4,391</a>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <!-- MARIIA Revolutionary editor -->
-
       <!-- MARIIA Here is what you get -->
       <section class="features">
-        <div class="container">
-          <h3 class="section__title">&lt;Here is what you get &gt;</h3>
-          <ul class="features__list">
-            <li class="features__item">
-              <img
-                src="./dist/images/features-icon1.png"
-                alt=""
-                class="features__icon"
-              />
-              <div class="features__description">
-                <h5 class="description__title">
-                  Creatred to Make The Web Better
-                </h5>
-                <p class="description__text">
-                  Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra
-                  dui laoreet vulputate dignissim. Sed id metus id quam auctor
-                  molestie eget ut augue.
-                </p>
-              </div>
-            </li>
-            <li class="features__item">
-              <img
-                src="./dist/images/features-icon2.png"
-                alt=""
-                class="features__icon"
-              />
-              <div class="features__description">
-                <h5 class="description__title">Incredibly Powerful Tool</h5>
-                <p class="description__text">
-                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
-                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
-                  iaculis mi gravida luctus. Aliquam erat volutpat.
-                </p>
-              </div>
-            </li>
-            <li class="features__item">
-              <img
-                src="./dist/images/features-icon3.png"
-                alt=""
-                class="features__icon"
-              />
-              <div class="features__description">
-                <h5 class="description__title">Experimental Stuff</h5>
-                <p class="description__text">
-                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
-                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
-                  iaculis mi gravida luctus. Aliquam erat volutpat.
-                </p>
-              </div>
-            </li>
-            <li class="features__item">
-              <img
-                src="./dist/images/features-icon4.png"
-                alt=""
-                class="features__icon"
-              />
-              <div class="features__description">
-                <h5 class="description__title">
-                  Creatred to Make The Web Better
-                </h5>
-                <p class="description__text">
-                  Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
-                  felis odio, ut volutpat massa placerat ac. Curabitur dapibus
-                  iaculis mi gravida luctus. Aliquam erat volutpat.
-                </p>
-              </div>
-            </li>
-          </ul>
-          <!-- <img src="./dist/images/features.png" alt="" class="features__image" /> -->
+        <div class="container container__features">
+          <div class="features__wrapper">
+            <h3 class="section__title section__title-features">
+              &lt;Here is what you get&gt;
+            </h3>
+            <ul class="features__list">
+              <li class="features__item">
+                <img
+                  src="./dist/images/features-icon1.png"
+                  alt=""
+                  class="features__icon"
+                  width="111px"
+                  height="64px"
+                />
+                <div class="features__description">
+                  <h5 class="description__title">
+                    Creatred to Make The Web Better
+                  </h5>
+                  <p class="description__text">
+                    Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra
+                    dui laoreet vulputate dignissim. Sed id metus id quam auctor
+                    molestie eget ut augue.
+                  </p>
+                </div>
+              </li>
+              <li class="features__item">
+                <img
+                  src="./dist/images/features-icon2.png"
+                  alt=""
+                  class="features__icon"
+                  width="90px"
+                  height="80px"
+                />
+                <div class="features__description">
+                  <h5 class="description__title">Incredibly Powerful Tool</h5>
+                  <p class="description__text">
+                    Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                    felis odio, ut volutpat massa placerat ac. Curabitur dapibus
+                    iaculis mi gravida luctus. Aliquam erat volutpat.
+                  </p>
+                </div>
+              </li>
+              <li class="features__item">
+                <img
+                  src="./dist/images/features-icon3.png"
+                  alt=""
+                  class="features__icon"
+                  width="60px"
+                  height="84px"
+                />
+                <div class="features__description">
+                  <h5 class="description__title">Experimental Stuff</h5>
+                  <p class="description__text">
+                    Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                    felis odio, ut volutpat massa placerat ac. Curabitur dapibus
+                    iaculis mi gravida luctus. Aliquam erat volutpat.
+                  </p>
+                </div>
+              </li>
+              <li class="features__item">
+                <img
+                  src="./dist/images/features-icon4.png"
+                  alt=""
+                  class="features__icon"
+                  width="71px"
+                  height="71px"
+                />
+                <div class="features__description">
+                  <h5 class="description__title">
+                    Creatred to Make The Web Better
+                  </h5>
+                  <p class="description__text">
+                    Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                    felis odio, ut volutpat massa placerat ac. Curabitur dapibus
+                    iaculis mi gravida luctus. Aliquam erat volutpat.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <!-- <img
+              src="./dist/images/features.png"
+              alt="features image"
+              class="features__image"
+              width="700px"
+              height="119px"
+            /> -->
+          </div>
         </div>
       </section>
       <!-- MARIIA Here is what you get -->
 
       <!--    Genya part 2-->
       <section class="container_background_talking_about">
-        <h2 class="talking_about_title">People Are Talking About Fork</h2>
+        <h3 class="talking_about_title">People Are Talking About Fork</h3>
         <section class="container_block_talking_about">
           <div class="main_block_talking_about">
             <div class="talking_about_blocks">
               <img
-                src="./src/images/talking_block_1.png"
+                src="./dist/images/talking_block_1.png"
                 alt="#"
                 class="talking_about_images"
               />
@@ -191,7 +214,7 @@
             </div>
             <div class="talking_about_blocks">
               <img
-                src="./src/images/talking_block_2.png"
+                src="./dist/images/talking_block_2.png"
                 alt="#"
                 class="talking_about_images"
               />
@@ -202,7 +225,7 @@
             </div>
             <div class="talking_about_blocks">
               <img
-                src="./src/images/talking_block_3.png"
+                src="./dist/images/talking_block_3.png"
                 alt="#"
                 class="talking_about_images"
               />
@@ -214,7 +237,7 @@
             </div>
             <div class="talking_about_blocks">
               <img
-                src="./src/images/talking_block_4.png"
+                src="./dist/images/talking_block_4.png"
                 alt="#"
                 class="talking_about_images"
               />
@@ -226,7 +249,7 @@
             </div>
             <div class="talking_about_blocks">
               <img
-                src="./src/images/talking_block_5.png"
+                src="./dist/images/talking_block_5.png"
                 alt="#"
                 class="talking_about_images"
               />
@@ -237,7 +260,7 @@
             </div>
             <div class="talking_about_blocks">
               <img
-                src="./src/images/talking_block_6.png"
+                src="./dist/images/talking_block_6.png"
                 alt="#"
                 class="talking_about_images"
               />
@@ -261,11 +284,10 @@
         />
       </section>
       <!--    Genya part 2-->
-
       <!-- MARIIA Fork Subscription Pricing -->
       <section class="subscription">
         <div class="container">
-          <h2 class="section__title">Fork Subscription Pricing</h2>
+          <h3 class="section__title">Fork Subscription Pricing</h3>
           <ul class="subscription__list">
             <li class="subscription__item">
               <span class="subscription__title">Students</span>
