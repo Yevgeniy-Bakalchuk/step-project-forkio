@@ -6,6 +6,7 @@
   position: relative;
 }
 .talking_about_title {
+  margin-top: 0;
   padding-top: 108px;
   font-weight: bold;
   font-size: 48px;
@@ -59,12 +60,14 @@
   }
 }
 .talking_about_blocks:nth-child(3) {
+  margin-top: 65px;
   @media screen and (min-width: 481px) and (max-width: 992px) {
     margin-left: 0;
-    margin-top: 50px;
+    margin-top: 40px;
   }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     margin-left: 0;
+    margin-top: 30px;
   }
 }
 .talking_about_blocks:nth-child(4) {
@@ -89,6 +92,7 @@
   }
 }
 .talking_about_text {
+  margin-top: 0;
   padding-top: 33px;
   text-align: center;
   font-style: italic;
@@ -96,6 +100,20 @@
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+  @media screen and (min-width: 481px) and (max-width: 992px) {
+    padding-top: 29px;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    padding-top: 27px;
+    margin-top: 0;
+  }
+}
+.talking_about_text:nth-child(1){
+  padding-top: 20px;
+}
+.talking_about_text:nth-child(3){
+  padding-top: 18px;
 }
 .talking_about_text_bottom {
   font-size: 14px;
