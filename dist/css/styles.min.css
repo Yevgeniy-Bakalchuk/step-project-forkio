@@ -404,6 +404,9 @@ li {
   font-size: 14px;
   cursor: pointer; }
 
+.features {
+  background: #f4f4f4; }
+
 .container__features {
   padding-top: 94.11px;
   padding-bottom: 71.57px; }
@@ -429,7 +432,6 @@ li {
     position: absolute;
     background-size: cover;
     z-index: 1;
-<<<<<<< HEAD
     width: 57%;
     height: 519px;
     top: 85px;
@@ -460,17 +462,6 @@ li {
         height: 381px;
         top: 105%;
         left: 0px; } }
-=======
-    top: 154px;
-    right: -20px; }
-
-.features__wrapper {
-  margin: 0 auto;
-  display: grid;
-  -moz-column-gap: 49px;
-  column-gap: 49px;
-  grid-template-areas: "description   title title" "description   . . " "description   . . " "description   . . "; }
->>>>>>> main
 
 .section__title-features {
   text-align: center;
