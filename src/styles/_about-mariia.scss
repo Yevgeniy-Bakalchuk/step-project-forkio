@@ -1,7 +1,14 @@
 .container__about {
   padding-bottom: 70px;
-  @media (min-width: 1200px) {
-    max-width: 906px;
+  padding-bottom: 98px;
+  max-width: 906px;
+  // min-width: 80%;
+
+  @media screen and (min-width: 481px) and (max-width: 992px) {
+    max-width: 90%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 70%;
   }
 }
 .download-link__info {
@@ -24,15 +31,40 @@
   text-transform: uppercase;
   margin-top: 66px;
   margin-bottom: 35px;
+  @media screen and (max-width: 1200px) {
+    font-size: calc(26px + 28 * ((100vw - 320px) / (1200 - 320)));
+  }
+  @media screen and (min-width: 481px) and (max-width: 992px) {
+    // font-size: 42px;
+    line-height: 42px;
+    margin-top: 93.5px;
+    margin-bottom: 22px;
+  }
+  @media screen and (max-width: 480px) {
+    line-height: 28px;
+    margin-top: 79.5px;
+    margin-bottom: 27px;
+  }
 }
 .about__text {
   color: #323232;
   font-style: normal;
   font-weight: normal;
-  font-size: 21px;
+  // font-size: 21px;
   line-height: 32px;
   text-align: center;
   margin: 0 0 23px 0;
+  margin-bottom: 23px;
+  @media screen and (max-width: 1200px) {
+    font-size: calc(14px + 7 * ((100vw - 320px) / (1200 - 320)));
+  }
+  @media screen and (min-width: 481px) and (max-width: 992px) {
+    margin-bottom: 33px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 36px;
+    line-height: 20px;
+  }
 }
 
 .about__info {
@@ -43,6 +75,7 @@
 }
 
 .info__item {
+  color: #323232;
   margin: 0 10px 0 0;
   font-size: 16px;
   font-style: normal;
@@ -51,7 +84,16 @@
   &:last-child {
     margin-right: 0;
   }
-  color: #323232;
+  @media screen and (min-width: 480px) and (max-width: 501px) {
+    &:last-child {
+      margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    &:last-child {
+      margin-top: 20px;
+    }
+  }
 }
 .info__item-wrapper {
   display: flex;

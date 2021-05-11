@@ -16,8 +16,12 @@ li {
   margin: 0 auto;
   width: 95%;
   max-width: 1200px;
+
+  // padding-left: 10px;
+  // padding-right: 10px;
+
   // min-width: 320px;
-  padding: 0 10px;
+  // padding: 0 10px;
   // @media (min-width: 993px) and (max-width: 1200px) {
   //   width: 95%;
   //   padding: 0 10px;
@@ -46,4 +50,5 @@ li {
   font-style: normal;
   font-weight: bold;
   text-align: center;
+  color: #ffffff;
 }
