@@ -181,7 +181,7 @@ li {
       .header_nav_item :hover:before {
         content: '';
         position: absolute;
-        left: -48px;
+        left: -50px;
         width: 8px;
         height: 53px;
         background: #8D81AC;
@@ -720,13 +720,16 @@ li {
   height: 2px;
   color: #645766;
   display: block;
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -10px; }
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .talking_about_bottom_line {
       width: 80%; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .talking_about_bottom_line {
-      width: 80%; } }
+      width: 80%;
+      margin-bottom: -15px; } }
 
 .subscription {
   background-image: url("../../dist/images/subscription-bg.png");

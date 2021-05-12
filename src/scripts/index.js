@@ -9,7 +9,6 @@
 // });
 
 const burgerMenu = () => {
-
     const menu = document.getElementById('btn-menu'),
         menuNav = document.querySelector('.header_nav_menu'),
         body = document.querySelector('body');

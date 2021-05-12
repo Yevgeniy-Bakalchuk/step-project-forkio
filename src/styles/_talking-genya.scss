@@ -142,11 +142,14 @@
   height: 2px;
   color: #645766;
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -10px;
   @media screen and (min-width: 481px) and (max-width: 992px) {
     width: 80%;
   }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 80%;
+    margin-bottom: -15px;
   }
 }
