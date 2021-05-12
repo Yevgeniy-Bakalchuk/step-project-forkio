@@ -37,17 +37,27 @@
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+  &::before {
+    content: "";
+    top: -8px;
+    right: 0;
+    width: 15px;
+  }
+  &::after {
+    content: "";
+    top: 8px;
+  }
 }
-.burger-menu-lines::before {
-  content: "";
-  top: -8px;
-  right: 0;
-  width: 15px;
-}
-.burger-menu-lines::after {
-  content: "";
-  top: 8px;
-}
+// .burger-menu-lines::before {
+//   content: "";
+//   top: -8px;
+//   right: 0;
+//   width: 15px;
+// }
+// .burger-menu-lines::after {
+//   content: "";
+//   top: 8px;
+// }
 // .burger-menu-lines-active .burger-menu-lines {
 //   background-color: transparent;
 // }
@@ -59,6 +69,8 @@
 //   top: 0;
 //   transform: rotate(-45deg);
 // }
+
+/* вот тут мог не появляться крестик, так как небыло медиазапроса на какой точке он должен появляться */
 .burger-menu-lines-active {
   @media screen and (max-width: 480px) {
     background-color: transparent;
@@ -74,23 +86,6 @@
     }
   }
 }
-
-//.burger-menu_overlay {
-//  @media screen and (min-width: 320px) and (max-width: 480px) {
-//    position: fixed;
-//    top: 0;
-//    left: 0;
-//    width: 100vh;
-//    height: 100vh;
-//    z-index: 10;
-//  }
-//}
-//.burger-menu_active .burger-menu_overlay{
-//  @media screen and (min-width: 320px) and (max-width: 480px) {
-//    display: block;
-//  }
-//}
-
 .header_menu {
   padding-top: 22px;
   display: flex;
@@ -139,7 +134,7 @@
   }
 }
 
-/* nav toggle */
+/* добавила nav toggle */
 .header_nav {
   @media screen and (max-width: 480px) {
     display: none;
@@ -150,16 +145,23 @@
     display: block;
   }
 }
-/* nav toggle */
+/* добавила nav toggle */
 
 .header_nav_menu {
   display: flex;
   @media screen and (min-width: 481px) and (max-width: 992px) {
     padding-top: 50px;
+    display: flex;
   }
-}
-.header_nav_menu--open {
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    /* закомментировала твои новые правки, ниже так как было */
+    // display: none;
+    // position: absolute;
+    // left: 8%;
+    // top: 85%;
+    // background-color: #333333;
+    // width: 75%;
+    // min-height: 335px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -171,7 +173,9 @@
     right: 5%;
   }
 }
+/* посмотри в макете -  item похоже становится фиолетовым когда на нем фокус или когда active, не только ховер */
 .header_nav_item {
+  position: relative;
   :hover {
     color: #ffffff;
     transition: 0.3s;
@@ -179,10 +183,45 @@
   @media screen and (min-width: 320px) and (max-width: 480px) {
     margin-top: 53px;
     margin-left: 10px;
+    :after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      width: -moz-available;
+      height: 3px;
+      background: #3b3b3b;
+      left: -49px;
+    }
     :hover {
       color: #8d81ac;
       transition: 0.3s;
     }
+    :hover:before {
+      content: "";
+      position: absolute;
+      left: -50px;
+      width: 8px;
+      height: 53px;
+      background: #8d81ac;
+      top: -13px;
+      transition: 0.5s;
+    }
+  }
+}
+.header_nav_item:after {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    content: "";
+    position: absolute;
+    top: 50px;
+    width: -moz-available;
+    height: 3px;
+    background: #3b3b3b;
+    left: -49px;
+  }
+}
+.header_nav_item:nth-child(1) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    margin-top: 35px;
   }
 }
 .header_nav_link {
@@ -305,4 +344,9 @@
     line-height: 20px;
     padding: 15px 29px;
   }
+}
+.link_download_for_free:hover {
+  color: #8d81ac;
+  background-color: #ffffff;
+  transition: 0.3s;
 }

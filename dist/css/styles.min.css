@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .about__info, .features__list, .subscription__list {
   margin: 0;
   padding-left: 0;
@@ -75,17 +76,16 @@ li {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%); }
+  .burger-menu-lines::before {
+    content: "";
+    top: -8px;
+    right: 0;
+    width: 15px; }
+  .burger-menu-lines::after {
+    content: "";
+    top: 8px; }
 
-.burger-menu-lines::before {
-  content: "";
-  top: -8px;
-  right: 0;
-  width: 15px; }
-
-.burger-menu-lines::after {
-  content: "";
-  top: 8px; }
-
+/* вот тут мог не появляться крестик, так как небыло медиазапроса на какой точке он должен появляться */
 @media screen and (max-width: 480px) {
   .burger-menu-lines-active {
     background-color: transparent; }
@@ -144,7 +144,7 @@ li {
     .header_logo_text {
       display: none; } }
 
-/* nav toggle */
+/* добавила nav toggle */
 @media screen and (max-width: 480px) {
   .header_nav {
     display: none; } }
@@ -153,36 +153,70 @@ li {
   .header_nav-open {
     display: block; } }
 
-/* nav toggle */
+/* добавила nav toggle */
 .header_nav_menu {
   display: flex; }
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .header_nav_menu {
-      padding-top: 50px; } }
+      padding-top: 50px;
+      display: flex; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .header_nav_menu {
+      /* закомментировала твои новые правки, ниже так как было */
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      background-color: #333333;
+      max-width: 80%;
+      min-height: 370px;
+      top: 85%;
+      left: 5%;
+      right: 5%; } }
+
+/* посмотри в макете -  item похоже становится фиолетовым когда на нем фокус или когда active, не только ховер */
+.header_nav_item {
+  position: relative; }
+  .header_nav_item :hover {
+    color: #ffffff;
+    transition: 0.3s; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .header_nav_item {
+      margin-top: 53px;
+      margin-left: 10px; }
+      .header_nav_item :after {
+        content: "";
+        position: absolute;
+        top: 50px;
+        width: -moz-available;
+        height: 3px;
+        background: #3b3b3b;
+        left: -49px; }
+      .header_nav_item :hover {
+        color: #8d81ac;
+        transition: 0.3s; }
+      .header_nav_item :hover:before {
+        content: "";
+        position: absolute;
+        left: -50px;
+        width: 8px;
+        height: 53px;
+        background: #8d81ac;
+        top: -13px;
+        transition: 0.5s; } }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .header_nav_menu--open {
+  .header_nav_item:after {
+    content: "";
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    background-color: #333333;
-    max-width: 80%;
-    min-height: 370px;
-    top: 85%;
-    left: 5%;
-    right: 5%; } }
-
-.header_nav_item :hover {
-  color: #ffffff;
-  transition: 0.3s; }
+    top: 50px;
+    width: -moz-available;
+    height: 3px;
+    background: #3b3b3b;
+    left: -49px; } }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .header_nav_item {
-    margin-top: 53px;
-    margin-left: 10px; }
-    .header_nav_item :hover {
-      color: #8d81ac;
-      transition: 0.3s; } }
+  .header_nav_item:nth-child(1) {
+    margin-top: 35px; } }
 
 .header_nav_link {
   text-decoration: none;
@@ -304,6 +338,11 @@ li {
       font-size: 18px;
       line-height: 20px;
       padding: 15px 29px; } }
+
+.link_download_for_free:hover {
+  color: #8d81ac;
+  background-color: #ffffff;
+  transition: 0.3s; }
 
 .container__about {
   padding-bottom: 70px;
@@ -697,13 +736,16 @@ li {
   height: 2px;
   color: #645766;
   display: block;
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -10px; }
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .talking_about_bottom_line {
       width: 80%; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .talking_about_bottom_line {
-      width: 80%; } }
+      width: 80%;
+      margin-bottom: -15px; } }
 
 .subscription {
   background-image: url("../../dist/images/subscription-bg.png");
