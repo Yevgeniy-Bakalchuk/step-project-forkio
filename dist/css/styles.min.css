@@ -293,6 +293,11 @@ li {
       line-height: 20px;
       padding: 15px 29px; } }
 
+.link_download_for_free:hover {
+  color: #8D81AC;
+  background-color: #ffffff;
+  transition: 0.3s; }
+
 .container__about {
   padding-bottom: 70px;
   padding-bottom: 98px;
@@ -424,7 +429,7 @@ li {
   z-index: 0;
   margin: 0 auto;
   display: grid;
-  grid-template-areas: "description   title title" "description   . . " "description   . . " "description   . . ";
+  grid-template-areas: "description   title title" "description   . . " "description   . . " "description   . . ";
   grid-template-columns: 45% 55%; }
   .features__wrapper::after {
     content: "";
@@ -447,7 +452,7 @@ li {
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .features__wrapper {
       grid-template-columns: 1fr;
-      grid-template-areas: "title" "description"; }
+      grid-template-areas: "title" "description"; }
       .features__wrapper::after {
         width: 94%;
         height: 519px;
@@ -456,7 +461,7 @@ li {
   @media screen and (max-width: 480px) {
     .features__wrapper {
       grid-template-columns: 1fr;
-      grid-template-areas: "title" "description"; }
+      grid-template-areas: "title" "description"; }
       .features__wrapper::after {
         width: 100%;
         height: 381px;
