@@ -96,6 +96,12 @@ li {
       top: 0;
       transform: rotate(-45deg); } }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .modal-container {
+    width: 100vh;
+    height: 100vh;
+    position: absolute; } }
+
 .header_menu {
   padding-top: 22px;
   display: flex;
@@ -176,7 +182,7 @@ li {
       flex-direction: column;
       background-color: #333333;
       max-width: 80%;
-      min-height: 370px;
+      min-height: 350px;
       top: 85%;
       left: 5%;
       right: 5%; } }

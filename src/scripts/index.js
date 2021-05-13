@@ -7,3 +7,7 @@ btnMenu.addEventListener("click", () => {
   icon.classList.toggle("burger-menu-lines-active");
   menu.classList.toggle("header_nav-open");
 });
+
+document.querySelector('.modal-container').addEventListener("click", (e) => {
+  btnMenu.click()
+})
