@@ -1,4 +1,3 @@
-
 const btnMenu = document.getElementById("btn-menu");
 const icon = document.querySelector(".burger-menu-lines");
 const menu = document.querySelector(".header_nav");
@@ -8,6 +7,6 @@ btnMenu.addEventListener("click", () => {
   menu.classList.toggle("header_nav-open");
 });
 
-document.querySelector('.modal-container').addEventListener("click", (e) => {
-  btnMenu.click()
-})
+document.querySelector(".modal-container").addEventListener("click", (e) => {
+  btnMenu.click();
+});

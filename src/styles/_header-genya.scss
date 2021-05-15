@@ -64,9 +64,9 @@
   }
 }
 .modal-container {
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    width: 100vh;
-    height: 100vh;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: 100%;
     position: absolute;
   }
 }
@@ -96,7 +96,7 @@
     left: 20px;
   }
 }
-.header_logo_link:hover .header_logo_text{
+.header_logo_link:hover .header_logo_text {
   color: #ffffff;
 }
 .header_logo_img {

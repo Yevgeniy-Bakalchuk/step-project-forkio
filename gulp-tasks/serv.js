@@ -6,8 +6,9 @@ const serv = (cb) => {
       baseDir: "./",
     },
     open: true,
-    browser: "chrome",
+    // browser: "chrome",
     // browser: "safari",
+    browser: "firefox",
   });
   cb();
 };
