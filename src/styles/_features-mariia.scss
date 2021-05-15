@@ -124,6 +124,7 @@
     padding-left: 10px;
   }
 }
+
 .features__item {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -139,6 +140,7 @@
     text-align: center;
   }
 }
+
 .features__icon {
   justify-self: center;
 }
@@ -150,6 +152,7 @@
   line-height: 21px;
   color: #323232;
 }
+
 .description__text {
   margin: 0;
   @extend %text-style;

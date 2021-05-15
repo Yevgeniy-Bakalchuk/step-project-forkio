@@ -59,6 +59,7 @@
     row-gap: 18px;
   }
 }
+
 .subscription__item {
   display: flex;
   flex-direction: column;
@@ -152,6 +153,7 @@
     margin-top: 51px;
   }
 }
+
 .subscription__service {
   @extend %text-style;
   font-size: 16px;
@@ -159,6 +161,7 @@
   text-align: center;
   color: #ffffff;
 }
+
 .subscription__button {
   @extend %text-style;
   font-size: 15px;
