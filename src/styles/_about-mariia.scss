@@ -2,14 +2,15 @@
   padding-bottom: 70px;
   padding-bottom: 98px;
   max-width: 906px;
+  width: 95%;
   // min-width: 80%;
 
-  @media screen and (min-width: 481px) and (max-width: 992px) {
+  @media screen and (max-width: 992px) {
     max-width: 90%;
   }
-  @media screen and (max-width: 480px) {
-    width: 70%;
-  }
+  // @media screen and (max-width: 480px) {
+  //   max-width: 90%;
+  // }
 }
 .download-link__info {
   font-style: normal;

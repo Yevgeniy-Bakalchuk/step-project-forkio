@@ -361,13 +361,11 @@ li {
 .container__about {
   padding-bottom: 70px;
   padding-bottom: 98px;
-  max-width: 906px; }
-  @media screen and (min-width: 481px) and (max-width: 992px) {
+  max-width: 906px;
+  width: 95%; }
+  @media screen and (max-width: 992px) {
     .container__about {
       max-width: 90%; } }
-  @media screen and (max-width: 480px) {
-    .container__about {
-      width: 70%; } }
 
 .download-link__info {
   font-style: normal;
@@ -523,10 +521,10 @@ li {
       grid-template-columns: 1fr;
       grid-template-areas: "title" "description"; }
       .features__wrapper::after {
-        width: 100%;
+        width: 98%;
         height: 381px;
         top: 105%;
-        left: 12px; } }
+        left: 16px; } }
 
 .section__title-features {
   text-align: center;
