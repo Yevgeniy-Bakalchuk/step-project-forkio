@@ -1,7 +1,32 @@
-$color: #8d81ac;
-$heading-color: #4e4e4e;
 $font-family: "Montserrat", sans-serif, "Lato", sans-serif;
 
-$maxWidth: 1200;
-$desktopSize: 1200;
-$mobSize: 320;
+// width
+$desktop-width: 1200px;
+$tablet-width: 768px;
+$mob-width: 320px;
+
+$breakpoint-tablet: 993px;
+$breakpoint-mob: 480px;
+
+// colors
+$color: #8d81ac;
+$heading-color: #4e4e4e;
+
+$download-link: #848e97;
+
+$about-title: #635c73;
+$about-text: #323232;
+$info-btn: linear-gradient(180deg, rgb(250, 250, 250), rgb(238, 238, 239));
+$info-btn-hover: linear-gradient(
+  180deg,
+  rgb(247, 247, 247),
+  rgb(229, 229, 229)
+);
+
+$description-text: #848e97;
+$subscription: rgba(255, 255, 255, 0.11);
+$subscription-big: rgba(70, 48, 72, 0.84);
+$subscription-title: rgba(255, 255, 255, 0.06);
+$subscription-title-big: rgba(0, 0, 0, 0.11);
+$subscription-btn: rgba(255, 255, 255, 0.15);
+$subscription-btn-hover: #ffffff36;

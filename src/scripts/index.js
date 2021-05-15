@@ -8,6 +8,5 @@ btnMenu.addEventListener("click", () => {
 });
 
 document.querySelector(".modal-container").addEventListener("click", (e) => {
-  // btnMenu.click();
   menu.classList.remove("header_nav-open");
 });
