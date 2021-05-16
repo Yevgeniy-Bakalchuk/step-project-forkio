@@ -1,10 +1,10 @@
 .idea
-thumbs.db
+/node_modules/
 .DS_Store
-node_modules/
+thumbs.db
+.vscode
 logs/
-*.log
-# dependencies
-/node_modules
+*.log*
 /dist/
 package-lock.json
+

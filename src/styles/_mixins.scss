@@ -9,15 +9,20 @@
   line-height: 50px;
 }
 
-%title-size_tablet {
-  font-size: 42px;
-  line-height: 44px;
+%text-style {
+  font-style: normal;
+  font-weight: normal;
 }
 
-@mixin adaptiv-font($pcSize, $mobSize) {
-  $addSize: $pcSize - $mobSize;
-  $maxWidth: $maxWidth - 320;
-  font-size: calc(
-    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
-  );
+%title-style {
+  font-style: normal;
+  font-weight: bold;
 }
+
+// @mixin adaptiv-font($pcSize, $mobSize) {
+//   $addSize: $pcSize - $mobSize;
+//   $maxWidth: $maxWidth - 320;
+//   font-size: calc(
+//     #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+//   );
+// }

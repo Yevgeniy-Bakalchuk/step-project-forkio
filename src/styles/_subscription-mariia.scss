@@ -24,7 +24,7 @@
   @extend %title-size_desktop;
 
   padding-bottom: 61px;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $desktop-width) {
     font-size: calc(28px + 20 * ((100vw - 320px) / (1200 - 320)));
   }
   @media screen and (min-width: 671px) and (max-width: 1140px) {
@@ -59,13 +59,14 @@
     row-gap: 18px;
   }
 }
+
 .subscription__item {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.11);
+  background-color: $subscription;
   &:nth-child(3) {
-    background-color: rgba(70, 48, 72, 0.84);
+    background-color: $subscription-big;
   }
   &:nth-child(1),
   &:nth-child(2),
@@ -94,24 +95,22 @@
 }
 
 .subscription__title {
-  font-style: normal;
-  font-weight: normal;
+  @extend %text-style;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: $subscription-title;
   padding: 36px 0;
 }
 .subscription__title-bigger {
-  background: rgba(0, 0, 0, 0.11);
+  background: $subscription-title-big;
   padding: 43px 0;
 }
 
 .subscription__price {
-  font-style: normal;
-  font-weight: normal;
+  @extend %text-style;
   font-size: 60px;
   text-transform: uppercase;
   color: #ffffff;
@@ -130,8 +129,7 @@
 }
 
 .subscription__period {
-  font-style: normal;
-  font-weight: normal;
+  @extend %text-style;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -155,17 +153,17 @@
     margin-top: 51px;
   }
 }
+
 .subscription__service {
-  font-style: normal;
-  font-weight: normal;
+  @extend %text-style;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #ffffff;
 }
+
 .subscription__button {
-  font-style: normal;
-  font-weight: normal;
+  @extend %text-style;
   font-size: 15px;
   line-height: 15px;
   text-align: center;
@@ -181,7 +179,15 @@
   border: none;
   border-radius: 30px;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: $subscription-btn;
+  cursor: pointer;
+  &:hover {
+    background-color: $subscription-btn-hover;
+    transition: 0.2s ease-in-out;
+  }
+  &:not(hover) {
+    transition: 0.2s ease-in-out;
+  }
 }
 .subscription__button-first {
   margin-top: 54px;
