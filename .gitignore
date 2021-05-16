@@ -6,4 +6,4 @@ thumbs.db
 logs/
 *.log*
 package-lock.json
-
+/dist/
