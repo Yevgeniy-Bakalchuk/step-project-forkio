@@ -75,6 +75,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 1200px){
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
   @media screen and (min-width: 481px) and (max-width: 992px) {
     min-height: 80px;
     background: #27262a;
@@ -89,7 +94,12 @@
 .header_logo_link {
   display: flex;
   text-decoration: none;
-  margin-right: 15%;
+  margin-right: 14%;
+  @media screen and (min-width: 1200px){
+    display: flex;
+    text-decoration: none;
+    margin-right: 28%;
+  }
   @media screen and (min-width: 481px) and (max-width: 992px) {
     position: absolute;
     top: 15px;
@@ -157,7 +167,6 @@
     right: 5%;
   }
 }
-/* посмотреть в макете -  item похоже становится фиолетовым когда на нем фокус или когда active, не только ховер */
 .header_nav_item {
   position: relative;
   :hover {

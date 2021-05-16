@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .about__info, .features__list, .subscription__list {
   margin: 0;
   padding-left: 0;
@@ -107,6 +106,11 @@ li {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (min-width: 1200px) {
+    .header_menu {
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content: space-between; } }
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .header_menu {
       min-height: 80px;
@@ -121,7 +125,12 @@ li {
 .header_logo_link {
   display: flex;
   text-decoration: none;
-  margin-right: 15%; }
+  margin-right: 14%; }
+  @media screen and (min-width: 1200px) {
+    .header_logo_link {
+      display: flex;
+      text-decoration: none;
+      margin-right: 28%; } }
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .header_logo_link {
       position: absolute;
@@ -187,7 +196,6 @@ li {
       left: 5%;
       right: 5%; } }
 
-/* посмотреть в макете -  item похоже становится фиолетовым когда на нем фокус или когда active, не только ховер */
 .header_nav_item {
   position: relative; }
   .header_nav_item :hover {
@@ -635,6 +643,10 @@ li {
 .container_block_talking_about {
   max-width: 90%;
   margin: 0 auto; }
+  @media screen and (min-width: 1200px) {
+    .container_block_talking_about {
+      max-width: 1200px;
+      margin: 0 auto; } }
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .container_block_talking_about {
       max-width: 90%; } }
@@ -643,6 +655,11 @@ li {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
+  @media screen and (min-width: 1200px) {
+    .main_block_talking_about {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; } }
 
 .talking_about_blocks {
   display: flex;
