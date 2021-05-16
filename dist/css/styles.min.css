@@ -3,9 +3,17 @@
   padding-left: 0;
   list-style: none; }
 
-.section__title-subscription {
+.section__title-features, .section__title-subscription {
   font-size: 48px;
   line-height: 50px; }
+
+.download-link__info, .about__text, .description__title, .description__text, .subscription__title, .subscription__price, .subscription__period, .subscription__service, .subscription__button {
+  font-style: normal;
+  font-weight: normal; }
+
+.about__title {
+  font-style: normal;
+  font-weight: bold; }
 
 body,
 html {
@@ -25,10 +33,6 @@ li {
   margin: 0 auto;
   width: 95%;
   max-width: 1200px; }
-  @media (max-width: 767px) {
-    .container {
-      max-width: none;
-      min-width: 320px; } }
 
 .section__title {
   font-style: normal;
@@ -371,13 +375,11 @@ li {
   padding-bottom: 98px;
   max-width: 906px;
   width: 95%; }
-  @media screen and (max-width: 992px) {
+  @media screen and (min-width: 480px) and (max-width: 992px) {
     .container__about {
       max-width: 90%; } }
 
 .download-link__info {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 15px;
   text-align: center;
@@ -387,8 +389,6 @@ li {
 
 .about__title {
   color: #635c73;
-  font-style: normal;
-  font-weight: bold;
   font-size: 54px;
   line-height: 54px;
   text-align: center;
@@ -411,12 +411,10 @@ li {
 
 .about__text {
   color: #323232;
-  font-style: normal;
-  font-weight: normal;
+  font-size: 21px;
   line-height: 32px;
   text-align: center;
-  margin: 0 0 23px 0;
-  margin-bottom: 23px; }
+  margin: 0 0 23px 0; }
   @media screen and (max-width: 1200px) {
     .about__text {
       font-size: calc(14px + 7 * ((100vw - 320px) / (1200 - 320))); } }
@@ -426,7 +424,9 @@ li {
   @media screen and (max-width: 480px) {
     .about__text {
       margin-bottom: 36px;
-      line-height: 20px; } }
+      line-height: 20px;
+      padding-left: 5px;
+      padding-right: 5px; } }
 
 .about__info {
   display: flex;
@@ -441,10 +441,12 @@ li {
   font-weight: bold; }
   .info__item:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 480px) and (max-width: 501px) {
+  @media screen and (min-width: 401px) and (max-width: 449px) {
     .info__item:last-child {
       margin-top: 20px; } }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 400px) {
+    .info__item:nth-child(2) {
+      margin-right: 0; }
     .info__item:last-child {
       margin-top: 20px; } }
 
@@ -452,7 +454,7 @@ li {
   display: flex; }
 
 .info__button {
-  padding: 7px 12px;
+  padding: 7px 8px;
   border: 1px solid #dddddd;
   border-radius: 4px;
   border-top-right-radius: 0;
@@ -523,22 +525,20 @@ li {
         width: 94%;
         height: 519px;
         top: 111%;
-        left: 9%; } }
+        left: 8.5%; } }
   @media screen and (max-width: 480px) {
     .features__wrapper {
       grid-template-columns: 1fr;
       grid-template-areas: "title" "description"; }
       .features__wrapper::after {
-        width: 98%;
+        width: 100%;
         height: 381px;
         top: 105%;
-        left: 16px; } }
+        left: 2.5%; } }
 
 .section__title-features {
   text-align: center;
   color: #8d81ac;
-  font-size: 48px;
-  line-height: 50px;
   padding-bottom: 17.89px;
   grid-area: title;
   margin: 0; }
@@ -547,8 +547,7 @@ li {
       font-size: calc(32px + 16 * ((100vw - 320px) / (1200 - 320))); } }
   @media screen and (min-width: 993px) and (max-width: 1200px) {
     .section__title-features {
-      font-size: calc(42px + 6 * ((100vw - 993px) / (1200 - 993)));
-      line-height: 50px; } }
+      font-size: calc(42px + 6 * ((100vw - 993px) / (1200 - 993))); } }
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .section__title-features {
       line-height: 44px;
@@ -569,14 +568,16 @@ li {
   padding-left: 20px; }
   @media screen and (min-width: 481px) and (max-width: 992px) {
     .features__list {
-      padding-right: 0;
+      padding-right: 10px;
       padding-left: 20px;
       grid-template-rows: repeat(4, 0.5fr);
       row-gap: 58px; } }
   @media screen and (max-width: 480px) {
     .features__list {
       row-gap: 40px;
-      grid-template-rows: repeat(4, 1fr); } }
+      grid-template-rows: repeat(4, 0.5fr);
+      padding-right: 10px;
+      padding-left: 10px; } }
 
 .features__item {
   display: grid;
@@ -600,16 +601,12 @@ li {
 .description__title {
   margin: 0;
   padding-bottom: 16.5px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 21px;
   color: #323232; }
 
 .description__text {
   margin: 0;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   color: #848e97; }
@@ -851,8 +848,6 @@ li {
       align-self: unset; } }
 
 .subscription__title {
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -866,8 +861,6 @@ li {
   padding: 43px 0; }
 
 .subscription__price {
-  font-style: normal;
-  font-weight: normal;
   font-size: 60px;
   text-transform: uppercase;
   color: #ffffff;
@@ -884,8 +877,6 @@ li {
   font-weight: bolder; }
 
 .subscription__period {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -907,16 +898,12 @@ li {
     margin-top: 51px; }
 
 .subscription__service {
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #ffffff; }
 
 .subscription__button {
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 15px;
   text-align: center;
@@ -931,7 +918,13 @@ li {
   border: none;
   border-radius: 30px;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.15); }
+  background-color: rgba(255, 255, 255, 0.15);
+  cursor: pointer; }
+  .subscription__button:hover {
+    background-color: #ffffff36;
+    transition: 0.2s ease-in-out; }
+  .subscription__button:not(hover) {
+    transition: 0.2s ease-in-out; }
 
 .subscription__button-first {
   margin-top: 54px; }
