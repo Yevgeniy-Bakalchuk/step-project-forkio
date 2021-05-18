@@ -1,5 +1,5 @@
 .subscription {
-  background-image: url("../../dist/images/subscription-bg.png");
+  background-image: url("../images/subscription-bg.png");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -103,6 +103,7 @@
   text-transform: uppercase;
   background-color: $subscription-title;
   padding: 36px 0;
+  margin: 0;
 }
 .subscription__title-bigger {
   background: $subscription-title-big;

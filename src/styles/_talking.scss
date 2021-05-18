@@ -1,9 +1,15 @@
 .container_background_talking_about {
-  background-image: url("../../dist/images/people_talking_img.png");
+  background-image: url("../images/people_talking_img.png");
   background-position: center center;
   background-size: cover;
   width: 100%;
   position: relative;
+  @media screen and (min-width: 481px) and (max-width: 992px) {
+    padding-top: 80px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    padding-top: 55px;
+  }
 }
 .talking_about_title {
   margin-top: 0;
@@ -14,12 +20,12 @@
   text-align: center;
   color: #ffffff;
   @media screen and (min-width: 481px) and (max-width: 992px) {
-    padding-top: 80px;
+    // padding-top: 80px;
     font-size: 42px;
     line-height: 44px;
   }
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    padding-top: 55px;
+    // padding-top: 55px;
     font-size: 36px;
     line-height: 48px;
   }
@@ -27,7 +33,7 @@
 .container_block_talking_about {
   max-width: 90%;
   margin: 0 auto;
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -39,7 +45,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

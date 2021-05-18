@@ -8,7 +8,7 @@ const serv = (cb) => {
     open: true,
     // browser: "chrome",
     // browser: "safari",
-    browser: "firefox",
+    // browser: "firefox",
   });
   cb();
 };
